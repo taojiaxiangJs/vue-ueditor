@@ -1,17 +1,38 @@
 {
-  "name": "vue-ueditor",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-ueditor-v2",
+  "version": "0.1.2",
+  "private": false,
+  "keyword": "vue vue2 ueditor",
+  "main": "lib/vueUEditor.umd.min.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taojiaxiangJs/vue-ueditor.git"
+  },
+  "homepage": "https://github.com/taojiaxiangJs/vue-ueditor#readme",
+  "keywords": [
+    "ueditor",
+    "vue",
+    "vue2",
+    "v-model",
+    "富文本编辑器",
+    "百度编辑器"
+  ],
+  "author": "陶家祥",
+  "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --mode prod --target lib --name vueUEditor --dest lib src/components/vue-ueditor/index.js",
+    "lib": "vue-cli-service build --mode prod --target lib --name vueUEditor --dest lib packages/vue-ueditor/index.js",
     "lint": "vue-cli-service lint"
   },
-  "dependencies": {
-    "core-js": "^3.8.3",
-    "vue": "^2.6.14",
-    "vue-ueditor-wrap": "^2.5.6"
+  "peerDependencies": {
+    "vue": "^2.6.14"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -19,11 +40,10 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "babel-loader": "^9.1.2",
+    "core-js": "^3.8.3",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "vue-loader": "^17.2.1",
+    "vue": "^2.6.14",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
